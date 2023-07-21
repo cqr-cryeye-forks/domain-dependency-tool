@@ -30,10 +30,7 @@ type ELineStyleNormal struct {
 }
 
 func genjs(name string, mp map[string]*dnsrecord, fname string) {
-	var datas []EData
-	var links []ELink
-	var categories []ECategory
-	var categoriesname []string
+
 
 	file, _ := json.MarshalIndent(mp, "", " ")
 
